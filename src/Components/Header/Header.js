@@ -12,9 +12,15 @@ function Header() {
           <img src={logo} alt='' />
         </div>
         <div className='col-md-6 header__menu d-flex justify-content-center align-items-center'>
-          <button className='nav-btn'>Search</button>
-          <button className='nav-btn'>Search</button>
-          <button className='nav-btn'>Search</button>
+          <a href='/' className='nav-btn'>
+            Home
+          </a>
+          <a href='/' className='nav-btn'>
+            about
+          </a>
+          <a href='/' className='nav-btn'>
+            contact
+          </a>
         </div>
 
         <div className='col-md-3 header__switch-mode text-end'>
