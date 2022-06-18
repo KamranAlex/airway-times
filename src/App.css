@@ -6,6 +6,13 @@
   font-family: 'Titillium Web', sans-serif;
 }
 :root {
-  --color-primary: #0b75b5;
+  --color-primary: #0b75b7;
   --color-secondary: #00a6be;
+}
+.theme_dark {
+  background-color: #252a40;
+  color: #01c6e4;
+}
+.theme_light {
+  background-color: #eef9ff;
 }

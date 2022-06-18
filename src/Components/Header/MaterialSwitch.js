@@ -2,7 +2,7 @@ import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 
 export const MaterialSwitch = styled(Switch)(({ theme }) => ({
-  width: 70,
+  width: 68,
   height: 44,
   padding: 8,
   alignItems: 'end',

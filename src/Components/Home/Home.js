@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 function Home() {
+  const theme = useSelector((state) => state.theme.value);
+
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch('https://dummyjson.com/products?skip=0&limit=100')
@@ -11,11 +14,13 @@ function Home() {
       });
   }, []);
   return (
-    <div style={{ marginBottom: '20rem' }}>
-      <h2 className='text-center'>Home</h2>
+    <div
+      style={{ padding: '3rem' }}
+      className={theme ? 'theme_dark' : 'theme_light'}
+    >
       <ul>
         {products.map((product) => (
-          <li key={product.id}>{product.title}</li>
+          <li>{product.title}</li>
         ))}
       </ul>
     </div>
